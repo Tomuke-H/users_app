@@ -14,3 +14,10 @@ require "faker"
         age: rand(5...85)
     )
 end
+
+10.times do
+    Bird.create(
+        name: Faker::Creature::Bird.implausible_common_name,
+        adj: Faker::Creature::Bird.adjective
+    )
+end
