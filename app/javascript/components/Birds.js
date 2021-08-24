@@ -27,12 +27,10 @@ const Birds = (props) => {
     return (
         <div style={{ display: "flex",
         flexDirection: "column",
-        backgroundColor: "#ededed",
         border: "5px solid",
         borderColor: "#00e6f2", 
         alignItems: "center",
-        justifyContent: "center",
-        width: "350px"}}>
+        justifyContent: "center"}}>
             <h2>All Birds page</h2>
             <a href="/">Home</a>
             <a href="/birds/new">Create new Bird</a>

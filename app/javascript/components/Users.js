@@ -27,12 +27,11 @@ const Users = (props) => {
     return (
         <div style={{ display: "flex",
         flexDirection: "column",
-        backgroundColor: "#ededed",
         border: "5px solid",
         borderColor: "#f2ad00", 
         alignItems: "center",
-        justifyContent: "center",
-        width: "350px"}}>
+        justifyContent: "center"
+    }}>
             <h2>All Users page</h2>
             <a href="/">Home</a>
             <a href="/users/new">Create new User</a>
