@@ -3,7 +3,13 @@ import React from "react";
 const UserNew = (props) => {
 
     return (
-        <div>
+        <div style={{ display: "flex",
+        flexDirection: "column",
+        backgroundColor: "#ededed",
+        border: "5px solid",
+        borderColor: "#f2ad00", 
+        alignItems: "center",
+        width: "350px"}}>
             <h2>New User</h2>
             <a href="/">Home</a>
             <a href="/users">Back to all Users</a>

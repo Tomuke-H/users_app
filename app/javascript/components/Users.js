@@ -5,7 +5,14 @@ const Users = (props) => {
         return props.users.map((user) => {
             return (
 
-                <div>
+                <div style={{ display: "flex",
+                flexDirection: "column",
+                backgroundColor: "#ededed",
+                border: "5px solid",
+                borderColor: "#f2ad00", 
+                alignItems: "center",
+                width: "350px"
+            }}>
                     <h1>{user.name}</h1>
                     <h6>{user.age}</h6>
                     <a href={`/users/${user.id}`}>View User</a>
@@ -18,7 +25,14 @@ const Users = (props) => {
     };
 
     return (
-        <div>
+        <div style={{ display: "flex",
+        flexDirection: "column",
+        backgroundColor: "#ededed",
+        border: "5px solid",
+        borderColor: "#f2ad00", 
+        alignItems: "center",
+        justifyContent: "center",
+        width: "350px"}}>
             <h2>All Users page</h2>
             <a href="/">Home</a>
             {renderUsers()}
