@@ -4,14 +4,21 @@ class UsersController < ApplicationController
         render component: "Home"
     end
 
-    # def new
-    # end
+    def show_all
+        render component: "Users"
+    end
 
-    # def show
-    # end
+    def new
+        render component: "UserNew"
+    end
 
-    # def edit
-    # end
+    def show
+        render component: "User"
+    end
+
+    def edit
+        render component: "UserEdit"
+    end
 
     # def create
     # end

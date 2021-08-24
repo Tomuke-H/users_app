@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   root "users#home"
 
   # all the gets!
-  get 'users', to: "users#home"
+  get 'users', to: "users#show_all"
   get 'users/new', to: "users#new"
   get 'users/:id', to: "users#show"
   get 'users/:id/edit', to: "users#edit"
