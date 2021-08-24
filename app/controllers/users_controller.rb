@@ -5,7 +5,7 @@ class UsersController < ApplicationController
     end
 
     def show_all
-        render component: "Users"
+        render component: "Users", props: {users: User.all}
     end
 
     def new
