@@ -5,7 +5,8 @@ const Home = (props) => {
     return (
         <div>
             <h1>Home Page</h1>
-            <h2 href="/users">Show All Users</h2>
+            <a href="/users/">Show All Users</a>
+            <a href="/users/new">Create new User</a>
         </div>
     );
 };
