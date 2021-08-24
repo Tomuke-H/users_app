@@ -20,7 +20,6 @@ const Users = (props) => {
         <div>
             <h2>All Users page</h2>
             <a href="/">Home</a>
-            <a href="/users/">Back to all Users</a>
             {renderUsers()}
         </div>
     );

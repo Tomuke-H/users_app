@@ -5,7 +5,10 @@ const User = (props) => {
     return (
         <div>
             <h2>User page</h2>
+            <h3>{props.user.name}</h3>
+            <h4>{props.user.age}</h4>
             <a href="/">Home</a>
+            <a href="/users/">Back to all Users</a>
         </div>
     );
 };
