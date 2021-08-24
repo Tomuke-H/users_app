@@ -14,7 +14,7 @@ const Users = (props) => {
                 width: "350px"
             }}>
                     <h1>{user.name}</h1>
-                    <h6>{user.age}</h6>
+                    <h3>Age: {user.age}</h3>
                     <a href={`/users/${user.id}`}>View User</a>
                     <a href={`/users/${user.id}/edit`}>Edit User</a>
                     <a href={`/users/${user.id}`} data-method="delete">Delete User</a>
@@ -35,6 +35,7 @@ const Users = (props) => {
         width: "350px"}}>
             <h2>All Users page</h2>
             <a href="/">Home</a>
+            <a href="/users/new">Create new User</a>
             {renderUsers()}
         </div>
     );

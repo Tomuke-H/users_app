@@ -39,12 +39,12 @@ class BirdsController < ApplicationController
         bird = Bird.find(params[:id])
         bird.destroy
 
-        redirect_to birds
+        redirect_to birds_path
     end
 
     private
 
     def birds_params
-        params.require(:bird).permit(:name, :type)
+        params.require(:bird).permit(:name, :adj)
     end
 end
