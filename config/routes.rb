@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   # more back end stuff
   post 'users', to: "users#create"
-  put 'users/:id', to: "users#update"
+  patch 'users/:id', to: "users#update"
   delete 'users/:id', to: "users#destroy"
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html

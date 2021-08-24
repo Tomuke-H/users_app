@@ -19,7 +19,8 @@ class UsersController < ApplicationController
     end
 
     def edit
-        render component: "UserEdit"
+        user = (User.find(params[:id]))
+        render component: "UserEdit", props: {user: user}
     end
 
     # def create
