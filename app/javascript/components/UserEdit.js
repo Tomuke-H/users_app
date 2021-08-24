@@ -1,19 +1,20 @@
 import React from "react";
 
 const UserEdit = (props) => {
+    const { id, name, age } = props.user
 
     return (
         <div>
             <h2>Edit page</h2>
             <a href="/">Home</a>
             <a href="/users/">Back to all Users</a>
-            <form action={`users/${props.users.id}`} method="post">
+            <form action={`/users/${props.user.id}`} method="post">
                 <input type="hidden" name="_method" value="patch"/>
                 <h4>User Name</h4>
-                <input defaultValue={props.user.name} name="user[name]" />
+                <input defaultValue={name} name="user[name]" />
                 <h4>User Age</h4>
-                <input defaultValue={props.user.age} name="user[age]" />
-                <button type="submit">Add User</button>
+                <input defaultValue={age} name="user[age]" />
+                <button type="submit">Update User</button>
             </form>
         </div>
     );

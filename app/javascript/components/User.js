@@ -9,6 +9,7 @@ const User = (props) => {
             <h4>{props.user.age}</h4>
             <a href="/">Home</a>
             <a href="/users/">Back to all Users</a>
+            <a href={`/users/${props.user.id}/edit`}>Edit User</a>
         </div>
     );
 };

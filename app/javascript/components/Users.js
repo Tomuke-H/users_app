@@ -10,6 +10,7 @@ const Users = (props) => {
                     <h6>{user.age}</h6>
                     <a href={`/users/${user.id}`}>View User</a>
                     <a href={`/users/${user.id}/edit`}>Edit User</a>
+                    <a href={`/users/${user.id}`} data-method="delete">Delete User</a>
                 </div>
 
             );
